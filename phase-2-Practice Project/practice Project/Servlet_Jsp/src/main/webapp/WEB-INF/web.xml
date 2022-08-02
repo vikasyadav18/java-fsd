@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://JAVA.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>ServletToServlet.testing.html</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>addition</servlet-name>
+    <servlet-class>Addition.AddInteger</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addition</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>multiply</servlet-name>
+    <servlet-class>Addition.Multiply</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>multiply</servlet-name>
+    <url-pattern>/multiply</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>testing</servlet-name>
+    <servlet-class>typesOfDataSendingBetweenServlet.Dispatcher_Redirect.testing</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>testing</servlet-name>
+    <url-pattern>/testing</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>setAttribute</servlet-name>
+    <servlet-class>typesOfDataSendingBetweenServlet.Dispatcher_Redirect.setAttribute1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>setAttribute</servlet-name>
+    <url-pattern>/setAttribute</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Cookie</display-name>
+    <servlet-name>Cookie</servlet-name>
+    <servlet-class>typesOfDataSendingBetweenServlet.Cookie.testingCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cookie</servlet-name>
+    <url-pattern>/cookie</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Cookie</display-name>
+    <servlet-name>Cookie1</servlet-name>
+    <servlet-class>typesOfDataSendingBetweenServlet.Cookie.Cookie1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cookie1</servlet-name>
+    <url-pattern>/Cookie1</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  <servlet-name>session</servlet-name>
+  <servlet-class>typesOfDataSendingBetweenServlet.Session.testingSession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>session</servlet-name>
+  <url-pattern>/session1</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+  <servlet-name>session1</servlet-name>
+  <servlet-class>typesOfDataSendingBetweenServlet.Session.getSession1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>session1</servlet-name>
+  <url-pattern>/getSession1</url-pattern>
+  </servlet-mapping>
+  
+  
+ <servlet>
+  <servlet-name>login</servlet-name>
+  <servlet-class>LoginProject.Authenticator</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>login</servlet-name>
+  <url-pattern>/Authenticate</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+  <servlet-name>login1</servlet-name>
+  <servlet-class></servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>login1</servlet-name>
+  <url-pattern>/loginSuccessfull</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+</web-app>
